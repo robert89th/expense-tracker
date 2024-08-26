@@ -25,3 +25,7 @@ from django.contrib.auth.decorators import login_required
 @login_required
 def expense_list(request):
     ...
+from django.http import HttpResponse
+
+def index(request):
+    return HttpResponse("Hello, this is the expenses index page.")
