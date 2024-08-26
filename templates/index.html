@@ -1,0 +1,26 @@
+{% extends 'expenses/base.html' %}
+
+{% block title %}Home - Expense Tracker{% endblock %}
+
+{% block content %}
+    <h1>Welcome to Your Expense Tracker</h1>
+    <p>Track your expenses, manage your budget, and gain insights into your spending habits.</p>
+
+    <div class="features">
+        <div class="feature">
+            <h2>Track Your Expenses</h2>
+            <p>Log all your daily expenses in one place.</p>
+            <a href="{% url 'expense_list' %}" class="btn">View Expenses</a>
+        </div>
+        <div class="feature">
+            <h2>Add New Expenses</h2>
+            <p>Quickly add new expenses and categorize them.</p>
+            <a href="{% url 'add_expense' %}" class="btn">Add Expense</a>
+        </div>
+        <div class="feature">
+            <h2>Analyze Your Spending</h2>
+            <p>Generate reports and visualize your spending patterns.</p>
+            <a href="#" class="btn">Coming Soon</a>
+        </div>
+    </div>
+{% endblock %}
